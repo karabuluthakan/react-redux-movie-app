@@ -22,7 +22,7 @@ export default (state = initialState, action) => {
             };
             case NEW_MOVIE_FULFILLED:
             return{
-                ...state, 
+                ...state,
                 fetching: false,
                 done: true
             };
