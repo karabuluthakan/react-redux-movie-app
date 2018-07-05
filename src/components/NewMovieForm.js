@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import { Button, Form, Image } from 'semantic-ui-react';
+import InlineError from './InlineError';
 
 class NewMovieForm extends Component {
     state={
         title:'',
         cover:'',
+        errors:{},
     };
 
     handleChange = (e) => {
@@ -13,22 +15,39 @@ class NewMovieForm extends Component {
         });
     };
 
+    onSubmit = () => {
+        const errors = this.validate();
+        this.setState({
+            errors
+        });
+    };
+    
+    validate = () => {
+      const errors = {};
+      if (!this.state.title) errors.title = "Can't be blank!"
+      if (!this.state.cover) errors.cover = "Can't be blank!"
+        return errors;
+    };
+
   render() {
+      const { errors } = this.state;
         return (
             <div>
                 <h2>New Movie</h2>
-                <Form>
-                    <Form.Field>
+                <Form onSubmit={this.onSubmit}>
+                    <Form.Field error={!!errors.title}>
                         <label>Title</label>
+                        { errors.title && <InlineError message={errors.title} /> }
                         <input
                             id="title"
                             name="title"
                             value={this.state.title}
                             onChange={this.handleChange}
                             placeholder='Title' />
-                    </Form.Field>
-                    <Form.Field>
+                    </Form.Field >
+                    <Form.Field error={!!errors.cover}>
                         <label>Cover URL</label>
+                        { errors.cover && <InlineError message={errors.cover} /> }
                         <input
                             id="cover"
                             name="cover"
@@ -38,7 +57,7 @@ class NewMovieForm extends Component {
                     </Form.Field>
                     <Image src={this.state.cover} size='small' wrapped />
                     <div className="clearfix"></div>
-                    <Button primary type='submit'>Submit</Button>
+                    <Button type='submit'>Submit</Button>
                 </Form>
             </div>
         );
