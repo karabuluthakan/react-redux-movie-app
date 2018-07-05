@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a155d89c-40db-4c48-8b4d-d1ff404e6591" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/actions/newMovie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/newMovie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NewMovieForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewMovieForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/NewMoviePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/NewMoviePage.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +19,8 @@
       <file leaf-file-name="newMovie.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/actions/newMovie.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+            <state relative-caret-position="255">
+              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -42,8 +40,8 @@
       <file leaf-file-name="NewMovieForm.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/NewMovieForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="46" column="84" selection-start-line="46" selection-start-column="84" selection-end-line="46" selection-end-column="84" />
+            <state relative-caret-position="388">
+              <caret line="71" column="43" selection-start-line="71" selection-start-column="43" selection-end-line="71" selection-end-column="43" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -235,12 +233,12 @@
       <updated>1530600857198</updated>
       <workItem from="1530600862198" duration="8685000" />
       <workItem from="1530692983712" duration="10626000" />
-      <workItem from="1530774177423" duration="4398000" />
+      <workItem from="1530774177423" duration="4798000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23709000" />
+    <option name="totallyTimeSpent" value="24109000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-307" y="-1047" width="1111" height="987" extended-state="0" />
@@ -607,13 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/newMovie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/pages/NewMoviePage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -624,10 +615,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/newMovie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/NewMovieForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="46" column="84" selection-start-line="46" selection-start-column="84" selection-end-line="46" selection-end-column="84" />
+        <state relative-caret-position="388">
+          <caret line="71" column="43" selection-start-line="71" selection-start-column="43" selection-end-line="71" selection-end-column="43" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
